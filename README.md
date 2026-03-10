@@ -8,6 +8,7 @@ npm install
 2. Start the server with 
 node app.js
 3. Open http://localhost:3000/ in your browser
+
 🚀 Features
 🎨 Styling & Formatting
 - Font Family Selection — Choose between three distinct font types
