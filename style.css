@@ -1,0 +1,121 @@
+/* layout and styling for editor */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f7f8fc, #e3f2ff);
+  color: #112;
+}
+
+#toolbar {
+  background: linear-gradient(120deg, #ffffff, #d5e4ff);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 2px solid #8aa9ce;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+  align-items: center;
+}
+
+/*improvement: prevent toolbar from shrinking oddly */
+#toolbar select,
+#toolbar button,
+#toolbar input[type="number"] {
+  flex-shrink: 0;
+  border: 1px solid #8aa9ce;
+  border-radius: 5px;
+  padding: 4px 8px;
+  background: #fff;
+}
+
+#toolbar button:hover,
+#toolbar select:hover,
+#toolbar input[type="number"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+
+#toolbar button:active {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.25);
+}
+
+#toolbar .align {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0e3e6a;
+}
+
+#toolbar .align.active {
+  border-color: #1d7bff;
+  background: #cce2ff;
+}
+
+#editor {
+  border: 1px solid #ccc;
+  height: 300px;
+  padding: 5px;
+  margin: 5px;
+  overflow: auto;
+  background: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#counters {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+#imageSection {
+  margin: 10px 5px;
+}
+
+/* theme classes applied to toolbar background */
+#toolbar.light { background: #f7f7f7; color: #111; }
+#toolbar.dark { background: #222; color: #fff; }
+#toolbar.sepia { background: #f4ecd8; color: #5b4636; }
+#toolbar.ocean { background: linear-gradient(135deg, #6bd6ff, #2d8bbf); color: #033e5a; }
+#toolbar.nightNeon { background: linear-gradient(135deg, #1b1b2f, #3a0ca3); color: #8cffaa; }
+#toolbar.forest { background: linear-gradient(135deg, #5b8c5a, #2e5d2f); color: #e9fdd0; }
+
+#editor {
+  border: 2px solid #7f99ba;
+  height: 360px;
+  padding: 12px;
+  margin: 10px;
+  overflow: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 14px rgba(0,0,0,0.08);
+}
+
+#editor.lightTheme { background: #fff; color: #0a1726; }
+#editor.darkTheme { background: #111827; color: #e2e8f0; }
+#editor.sepiaTheme { background: #fff8e6; color: #5b4636; }
+#editor.oceanTheme { background: #e6f8ff; color: #053b5a; }
+#editor.nightNeonTheme { background: #121233; color: #bdfdfe; }
+#editor.forestTheme { background: #eaf6ea; color: #163a24; }
+
+#counters {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+#counters button {
+  margin-left: 12px;
+  background: #f1faff;
+  border: 1px solid #8aa9ce;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#counters button:hover {
+  background: #e0f1ff;
+}
+
+#imageSection {
+  margin: 10px 5px;
+}
